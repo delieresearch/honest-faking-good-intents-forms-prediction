@@ -13,7 +13,19 @@ This is the official repository for the research paper "User Modeling for Distin
 * [Licence](#a-licence)
 
 ## <a name="a-citation"> Paper Citation
-TBA
+```bibtex
+@Article{Kuric2025,
+  title={User modeling for detecting faking-good intent in online personality questionnaires in the wild based on mouse dynamics},
+  author={Kuric, Eduard and Demcak, Peter and Smrecek, Peter and Spilakova, Beata},
+  journal={Multimedia Tools and Applications},
+  year={2025},
+  month={Apr},
+  day={28},
+  issn={1573-7721},
+  doi={10.1007/s11042-025-20852-9},
+  url={https://doi.org/10.1007/s11042-025-20852-9}
+}
+```
 
 ## <a name="a-datasets"> Dataset
 In this study, we created a dataset that contains information on user behavior during completion of the Big Five personality questionnaire. To collect data in two groups, Honest (H) and Faking-good (FG) (a.k.a. lying in the context of a personality questionnaire), one half of participants was instructed to present themselves in the questionnaire as better than they actually are, with lying being explicitly encouraged. The other half was asked to fill in the questionnaire truthfully. The dataset has two original sources of information. [Limesurvey](https://www.limesurvey.org/) provided completed questionnaire data. [UXtweak](https://www.uxtweak.com/) provided information about the user's low-level interactions with the questionnaire (mouse dynamics). The data was then cleaned, preprocessed, and formatted into a structure that is suitable for machine learning. The dataset contains pageview records, with each row representing metrics for a single pageview - [Dataset one-pageview-per-one-row](Data/Prepared_datasets/dataset_one_pv_per_one_row.json).
